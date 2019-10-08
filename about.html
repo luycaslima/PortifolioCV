@@ -1,76 +1,52 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="pt-br" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8"> <!-- definindo os metadados a serem rendereziados pelo navegador -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
   <title>About Me</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<div class="sidenav">
 
-  <!-- TROCAR IMAGEM-->
-  <img src="Images/tanuki_idle.png" width="128" height="128" alt=" MENUS TOP IMAGE">
-  <!-- Definir o tamanho do menu baseado no tamanho do nome -->
-  <div class="Nome">
-    <p> Lucas Lima </p>
-  </div>
-  <div class="Areas">
-    <p>Game Developer | Programador | Pixel Artist</p>
-  </div>
-
-  <a href="index.html">Home</a>
-  <a href="jogos.html">Games</a>
-  <a href="about.html">About</a>
-  <!-- transformar em imagens -->
-
-  <a href="https://twitter.com/Lukisama">Twitter</a>
-  <a href="https://www.instagram.com/luycaslima/">Instagram</a>
-</div>
 <body>
+  <div class="sidenav">
+
+    <!-- TROCAR IMAGEM-->
+    <img src="Images/tanuki_idle.png" width="128" height="128" alt=" MENUS TOP IMAGE">
+
+    <div class="textmenu">
+      <a href="index.html">Home</a>
+      <!-- <a href="jogos.html">Games</a> -->
+      <a href="about.html">About</a>
+      <!-- transformar em imagens -->
+
+      <a href="https://twitter.com/Lukisama">Twitter</a>
+      <a href="https://www.instagram.com/luycaslima/">Instagram</a>
+    </div>
+  </div>
+
   <div class="main">
-  <img src="Images/LucasProfile.jpg" width="256" height="256" alt=" Lucas's Image Profie">
-  <p>
-    Sou estudante de Ciência da Computação. Desenvolvedor de jogos como meta.
-    Faço ilustrações, modelagens 3d e as vezes pinto aquarelas.
-  </p>
-  <hr>
-  <h3>Formação</h3>
-  <table>
-    <thead>
-      <tr>
-        <th>
-          Ano
-        </th>
-        <th>
-          Formação
-        </th>
-      </tr>
-    </thead>
-  <tbody>
-    <tr>
-      <td>
-        2019 - Atualmente
-      </td>
-      <td>
-        Bacharelado em Ciência da Computação
-      </td>
-    </tr>
-    <tr>
-      <td>
-        2014 - 2019
-      </td>
-      <td>
-        Bacharelado em Engenharia da Computação
-      </td>
-    </tr>
-  </tbody>
-  <tfoot>
 
-  </tfoot>
+  <div class="middle-container">
+    <div class="profile">
 
-  </table>
-  <hr>
+      <div class="introbox">
+        <img class="profile-img" width="256" height="256" src="Images/LucasProfile.jpg" alt="profile-image">
+        <h1>ABOUT</h1>
+        <p class ="intro">Sou estudante de Ciência da Computação. Desenvolvedor de jogos como meta.
+        Faço ilustrações, modelagens 3d e as vezes pinto aquarelas.</p>
+        <p><b>Email:</b> luycaslima@gmail.com</p>
+        <!-- <p><b>Resume:</b></p> -->
+      </div>
+
+  <div class="bottom-container">
+    <p class= "copyright">© 2018 Lucas Lima.</p>
+  </div>
 
   <!--
   <h3>Contact Me</h3>
@@ -84,7 +60,7 @@
     <textarea name="yourMessage" rows="10" cols="30"></textarea>   <br>
     <input type="submit" name="" >
   </form>-->
-</div>
+  </div>
 </body>
 
 </html>
