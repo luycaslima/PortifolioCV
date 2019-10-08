@@ -1,12 +1,23 @@
+body {
+  background-color: #f2f3f3;
+}
+hr{
+  border: dotted #064acb 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+
+}
+/*MENU*/
 .sidenav{
    position: fixed;
-   width: 180px;
+   width: 160px;
    z-index: 1;/* Stay on top */
    top: 20px;
    left: 10px;
    /*background: #eee;*/
    overflow-x: hidden;
-   padding: 8px 0px;
+   padding: 16px 0px;
 }
 .sidenav img{
     display: block;
@@ -14,25 +25,24 @@
     margin-right: auto;
 }
 
-.Nome{
+/* The navigation menu links */
+.sidenav a {
+  padding: 0px 24px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #366ed8;
   display: block;
-  margin-bottom: auto;
-  padding-right: 8px;
-  padding-left: 16px;
-  font-size: 30px;
 }
-.Areas{
-  vertical-align: top;
-  font-size: 12px;
-  margin-top: -25px;
-  /*padding: 0px 8px 0px 16px;*/
-  padding-right: 8px;
-  padding-left: 16px;
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #064acb;
 }
 
-body {
-  background-color: #f2f3f3;
+.textmenu{
+  padding-top: 16px;
 }
+
+
 
 /* Style page content */
 .main {
@@ -40,15 +50,54 @@ body {
   padding-right: 10px;
 }
 
-/* The navigation menu links */
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #366ed8;
-  display: block;
+/* CONTEUDO*/
+.top-container{
+  margin: 32px 0;
+  text-align: center;
 }
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.middle-container{
+  margin: 100px 0;
+}
+.introbox{
+  margin: 100px auto 200px auto;
+  width:80%;
+  text-align:  left;
+}
+.profile-img{
+  border-radius: 50%;
+  float: right;
+  margin-left: 30px;
+}
+.pixelart{
+
+  margin: 100px auto 100px auto;
+  width:80%;
+  text-align:  left;
+
+}
+.lista-jogos{
+  margin: 20px auto 100px auto;
+
+  text-align: left;
+}
+.games{
+
+  margin: 100px auto 100px auto;
+  width:80%;
+  text-align:  left;
+
+}
+
+.copyright{
   color: #064acb;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+.bottom-container{
+  margin-bottom: 0;
+  padding: 50px 0 20px;
+
+  position: relative;
+  text-align: center;
 }
