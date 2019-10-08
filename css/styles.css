@@ -65,6 +65,7 @@ hr{
   width:80%;
   text-align:  left;
 }
+
 .profile-img{
   border-radius: 50%;
   float: right;
@@ -88,6 +89,11 @@ hr{
   width:80%;
   text-align:  left;
 
+}
+.skills{
+  margin: 100px auto 100px auto;
+  width:80%;
+  text-align:  left;
 }
 
 .copyright{
