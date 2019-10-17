@@ -6,7 +6,7 @@ hr{
   border: dotted #064acb 6px;
   border-bottom: none;
   width: 4%;
-  margin: 100px auto;
+  margin: 64px auto;
 
 }
 .fullbody{
@@ -194,7 +194,7 @@ hr{
 }
 .games{
 
-  margin: 100px auto auto auto;
+  margin: 32px auto auto auto;
   width:80%;
   text-align:  left;
 
