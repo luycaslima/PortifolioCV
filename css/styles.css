@@ -11,7 +11,8 @@ hr{
 }
 .fullbody{
   display: flex;
-  margin: auto 10% auto 10%;
+  margin: auto auto auto 20%;
+  /* margin: auto 10% auto 20%; */
 }
 
 /*MENU*/
@@ -25,6 +26,7 @@ hr{
    width: 200px;
    margin: 112px 0;
    padding: 16px 24px;
+   text-align: center;
 }
 .sidenav img{
     display: block;
@@ -32,30 +34,69 @@ hr{
     margin-right: auto;
 }
 
+/*SOCIAL MEDIA*/
+/*Ajustar espaçamento */
+.SocialMedia{
+  display: flex;
+  padding: 8px 12px;
+}
+.instagram{
+  transition: .5s ease;
+}
+.instagram:hover {
+  opacity: 0.5;
+  transition: .5s ease;
+}
+.twitter{
+  transition: .5s ease;
+}
+.twitter:hover {
+  opacity: 0.5;
+  transition: .5s ease;
+}
+
 /* The navigation menu links */
 .sidenav a {
-  padding: 0 24px;
   text-decoration: none;
   font-size: 20px;
   color: #366ed8;
   display: block;
+  padding: 0 5px;
 }
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #064acb;
 }
 .textmenu{
+  padding: 0 24px;
   padding-top: 16px;
 }
 
 
+/*ABOUT*/
+.introbox{
+  margin: 100px auto 200px auto;
+  width:80%;
+  text-align:  left;
+}
+.skills{
+  margin: 100px auto 100px auto;
+  width:80%;
+  text-align:  left;
+}
+/* Imagem do ABOUT */
+.profile-img{
+  border-radius: 50%;
+  float: right;
+  margin-left: 30px;
+}
 
 /* Style page content */
-.main {
-  /* margin-left: 200px; /* Same as the width of the sidebar */
-  /* padding-right: 10px; */
-  /* margin: auto 10% auto 20%; */
-}
+/* .main {
+   margin-left: 200px;
+   padding-right: 10px;
+   margin: auto 10% auto 20%;
+} */
 
 /* CONTEUDO MAIN*/
 .top-container{
@@ -63,22 +104,89 @@ hr{
   text-align: center;
 }
 .middle-container{
-  margin: 100px 0;
-}
-.introbox{
-  margin: 100px auto 200px auto;
-  width:80%;
-  text-align:  left;
+  margin: 32px 0;
 }
 
+/*Grid System*/
+.flex-column {
+  max-width : 260px;
+}
+.scale
+{
+  transform: scaleY(1.05);
+  padding-top: 5px;
+}
 
+/*HOVERABLE IMAGES ON THE MAIN*/
+.container {
+  position: relative;
+  width: 256px;
+  padding: 0;
+
+}
+.container img{
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+  transition: .5s ease;
+}
+.container:hover img{
+  filter: none;
+  -webkit-filter: grayscale(0%);
+  transition: .5s ease;
+}
+.container:hover .overlay {
+  opacity: 0.5;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  /* background-color: #008CBA; */
+}
+.overlay-text {
+
+  width: 256px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
+.overlay-text a{
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.button{
+  display: inline-block;
+  border: none;
+  /* background-color: #D0F2F2; */
+  /* display: inline-block; */
+  padding: 106px 106px;
+  cursor: pointer;
+}
+
+/*ABA PIXEL ART*/
 .pixelart{
-
   margin: 100px auto 100px auto;
   width:80%;
   text-align:  left;
 
 }
+
+
+
+/*Lista de jogos*/
 .lista-jogos{
   margin: 20px auto 100px auto;
 
@@ -86,21 +194,22 @@ hr{
 }
 .games{
 
-  margin: 100px auto 100px auto;
+  margin: 100px auto auto auto;
   width:80%;
   text-align:  left;
 
 }
-.skills{
-  margin: 100px auto 100px auto;
-  width:80%;
-  text-align:  left;
-}
+
 
 .copyright{
   color: #064acb;
   font-size: 0.75rem;
-  padding: 20px 0;
+  padding: 20px 0  0  0;
+}
+.icons{
+  color: #064acb;
+  font-size: 0.75rem;
+  padding: 0;
 }
 
 .bottom-container{
@@ -108,11 +217,4 @@ hr{
   /* margin: auto 10% auto 30%;
   position: absolute; */
   text-align: center;
-}
-
-/* Imagem do ABOUT */
-.profile-img{
-  border-radius: 50%;
-  float: right;
-  margin-left: 30px;
 }
