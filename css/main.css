@@ -196,18 +196,25 @@ main {
 
 /*when in landscape mode on mobile when is the height is too small (Temporario, o menu tem q ser superior como no modo em pé*/
 
-@media only screen and (max-height:400px){
+@media only screen and (max-height:360px){
 
   .sidenav{
     margin: 0px;
-    width: 30%;
   }
+  #menu{
+    padding: 0 2px 200px;
+  }
+  
+  #mobile-menu a{
+    height :initial;
+  }
+
   #textmenu{
     margin: 10px;
+    
   }
-  .sidenav img{
-    height:50%;
-  }
+
+  
 
 
 }
