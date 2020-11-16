@@ -1,0 +1,30 @@
+.GalleryContainer {
+	align-items: center;
+	display: grid;
+	grid-gap: 17px;
+	
+	grid-template-columns: repeat(1 , minmax( calc(250px * 1), 1fr));
+	margin: 0px -20px;
+}
+
+.GalleryContainer img{
+	width: 100%;
+}
+.GalleryContainer a {
+	text-decoration: none;
+	filter: grayscale(100%);
+}
+.GalleryContainer a:hover {
+	filter: grayscale(0%);
+	filter: opacity(50%);
+}
+
+/* Desktop Mode*/
+@media only screen and (min-width: 768px) {
+
+	.GalleryContainer{
+		grid-template-columns: repeat( auto-fit , minmax( calc(250px * 1) , 1fr));
+		margin:  0px 200px;
+	}
+}
+

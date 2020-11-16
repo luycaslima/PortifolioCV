@@ -1,0 +1,213 @@
+
+body {
+   /*vp = percentual de viewport height*/
+  background: #F7F7FF;
+}
+
+
+
+main h1,h2,h3{
+  font-family: 'Righteous', cursive;
+}
+main h1{
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  color: #001021;
+}
+main h2{
+  font-size: 1.8em/1;
+  letter-spacing: 0.05rem;
+  color:#495867;
+}
+main p{
+  font: 400 1.1em/1 'Roboto Condensed', sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+.sidenav a{
+  text-decoration: none;
+}
+
+#textmenu a{
+  padding: 3px 0px;
+  letter-spacing: 0.1rem;
+  font: 400 1.2em/1 'Roboto Condensed', sans-serif;
+  color: #495867;
+}
+
+#textmenu a:hover{
+  color: #FE5F55;
+}
+
+#socialmedia a{
+  padding: 0px 10px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+#socialmedia img{
+  width: 120%;
+  height: 120%;
+  vertical-align: bottom;
+  
+}
+#socialmedia img:hover{
+  filter: invert(50%) sepia(30%) saturate(3514%) hue-rotate(328deg) brightness(104%) contrast(99%); /*simulando a cor #FE5F55 */
+  /* usei https://codepen.io/sosuke/pen/Pjoqqp  para gerar esse filtro*/
+}
+
+#footer-note footer{
+  padding: 10px;
+  text-align: center;
+  font: 400 0.8em/1 'Roboto Condensed', sans-serif;
+  color: #BDD5EA;
+}
+
+/*Mobile*/
+main {
+  margin: 70px 10% 0px 10%;
+}
+
+#menu{
+  display: none;
+  background-color: #F7F7FF;
+  padding: 200px 2px 500px;
+  text-align: center;
+  
+}
+.sidenav hr{
+  width: 100%;
+  
+  margin: 5px auto 0px;
+  /* Orange Red Crayole */
+  
+  border: 4px dashed #FE5F55;
+}
+
+.sidenav{
+  
+  display: block;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 2% 2%;  /*15px 18px*/
+
+  position: fixed;
+  z-index: 1; /* Stay on top */
+  background-color: #F7F7FF;
+
+  height: 8%;
+  left: 5px;
+  right: 5px;
+  top: 0px;
+}
+
+.sidenav img{
+  height: 90%;
+  margin-left: 10%;
+}
+
+#mobile-menu a{
+  display: block;
+  position: absolute;
+  right: 10%;
+  top: 25%;
+  height: 50%;
+}
+
+
+
+#socialmedia{
+  display: inline-flex;
+  padding: 10px;
+}
+
+
+#textmenu{
+  display: grid;
+  text-align: center;
+  padding: 20px 30%;
+}
+
+#footer-note{
+  display: none;
+}
+
+@media screen and (orientation: landscape){
+
+}
+
+/* Desktop Mode*/
+@media only screen and (min-width: 768px) {
+  main {
+    margin: 60px 0px 0px 20%;
+    padding: 0px 60px;
+    text-align: center;
+  }
+  .sidenav{
+    
+    top: 0%; /* Stay at the top */
+    left: 0%;
+
+    margin: 80px 0px 0px 10%;
+    width: 280px;
+    display: block;
+    text-align: center;
+    
+    height:initial;
+  } 
+  .sidenav img{
+    margin-left: initial;
+  }
+
+  #textmenu {
+    margin: 65px 76px;
+    text-align: center;
+    display: grid;
+    padding: initial;
+
+  }
+
+  #socialmedia{
+    display: inline;
+  }
+  #socialmedia img{
+    width: 120%;
+    height: 120%;
+  }
+  
+  #footer-note{
+    display: initial;
+  }
+  #mobile-menu{
+    display: none;
+  }
+
+  #menu{
+    background: initial;
+    padding: initial;
+    display: block;
+  }
+  .sidenav hr{
+    display: none;
+  }
+
+}
+
+/*when in landscape mode on mobile when is the height is too small (Temporario, o menu tem q ser superior como no modo em pé*/
+
+@media only screen and (max-height:400px){
+
+  .sidenav{
+    margin: 0px;
+    width: 30%;
+  }
+  #textmenu{
+    margin: 10px;
+  }
+  .sidenav img{
+    height:50%;
+  }
+
+
+}

@@ -1,145 +1,154 @@
 <!DOCTYPE html>
-<!-- https://docs.emmet.io/cheat-sheet/ para referencia -->
-<html lang="pt-br" dir="ltr">
-
-<head>
-  <meta charset="utf-8"> <!-- definindo os metadados a serem rendereziados pelo navegador -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-  <title> luycaslima - portifolio </title> <!-- Titulo mostrado na aba -->
-  <link rel="icon" href="Images/tanuki_idle.png">
-  <link rel="stylesheet" href="css/styles.css">
+<html lang="en pt_br" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L22L</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/gallery-container.css" />
+    <link rel="stylesheet" href="css/animations.css" />
 
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
 
-</head>
+    <!-- Js-->
+    <script type="text/javascript" src="scripts/menu-mobile.js"></script>
+  </head>
+  <body>
+    <div id="full-body">
+      <div class="sidenav">
+        <img src="Images/logo5.svg" alt="L22L Logo" />
+        
+        <div id="mobile-menu">
+          <a href="javascript:void(0);" onclick="openMobileMenu()">
+            <img src="Images/Menu/menu_button_mobile.svg" alt="menu-mobile-bars" />
+          </a>
+        </div>
+        
+         <!-- <img src="Images/Menu/line.svg" alt="Menu Line">-->
+        <div id= "menu">
+         
+          <div id="textmenu">
+            <a href="#"><span>Illustrations</span></a>
+            <a href="#"><span>Games</span></a>
+            <a href="#"><span>Projects</span></a>
+            <a href="#"><span>Blog</span></a>
+            <a href="about.html"><span>About</span></a>
+          
+          </div>
+          
+          <div id="socialmedia">
+            <a href="https://www.instagram.com/luycaslima/" target="_blank">
+              <img src="Images/SocialMedia/instagram.svg" alt="Instagram" />
+            </a>
+            <a href="https://twitter.com/Lukisama" target="_blank">
+              <img src="Images/SocialMedia/twitter.svg" alt="Twitter" />
+            </a>
+            <a href="https://github.com/luycaslima" target="_blank">
+              <img src="Images/SocialMedia/github.svg" alt="Github" />
+            </a>
+          </div>
 
+        </div>
+        
 
-<body>
-  <div class="fullbody">
-    <div class="sidenav">
+      
+      </div>
 
-      <!-- TROCAR IMAGEM-->
-      <img src="Images/tanuki_idle2.png" width="144" height="144" alt=" MENUS TOP IMAGE">
-      <!-- Definir o tamanho do menu baseado no tamanho do nome -->
+      <main>
+        <div class="GalleryContainer">
+          <a href="#">
+            <img src="Images/Image_PlaceHolder.svg" alt="" />
+          </a>
+          <a href="#">
+            <img src="Images/Image_PlaceHolder.svg" alt="" />
+          </a>
+          <a href="#">
+            <img src="Images/Image_PlaceHolder.svg" alt="" />
+          </a>
 
-      <div class="textmenu">
-        <a href="index.html">Works</a>
-        <a href="#">Illustration</a>
-        <a href="#">Projects</a>
-        <a href="#">Coding</a>
-        <a href="about.html">About</a>
+          <a href="#">
+            <img src="Images/Image_PlaceHolder.svg" alt="" />
+          </a>
+          <a href="#">
+            <img src="Images/Image_PlaceHolder.svg" alt="" />
+          </a>
+          <a href="#">
+            <img src="Images/Image_PlaceHolder.svg" alt="" />
+          </a>
 
-        <!-- transformar em imagens -->
-        <div class="SocialMedia">
-          <a href="https://www.instagram.com/luycaslima/"><img src="Images/SocialMedia/instagram.svg" class="instagram" alt="Instagram image" width=30/ ></a>
-          <a href="https://twitter.com/Lukisama"> <img src="Images/SocialMedia/twitter.svg" class="twitter" alt="twitter image" width=30/ > </a>
+          <a href="#">
+            <img src="Images/Image_PlaceHolder.svg" alt="" />
+          </a>
+          <a href="#">
+            <img src="Images/Image_PlaceHolder.svg" alt="" />
+          </a>
+          <a href="#">
+            <img src="Images/Image_PlaceHolder.svg" alt="" />
+          </a>
+        </div>
+        <div id="footer-note">
+          <footer>2017 - 2020 Lucas Lima</footer>
         </div>
 
+        <!-- 
+      <div class="post-container">
+        <h1>
+          Título
+        </h1>
+        <h2>
+          Subtítulo
+        </h2>
+        
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus leo in congue vestibulum. Sed iaculis felis et
+          erat auctor, id ullamcorper augue rhoncus. Duis quis enim nec nunc ultricies condimentum et vitae velit. Suspendisse
+          congue mollis facilisis. Etiam pulvinar metus id orci ultrices, pulvinar ultrices quam gravida. Etiam et aliquam
+          lorem. Ut fermentum lobortis mi at sodales. Sed vitae orci non dui tincidunt lobortis eu in odio. Curabitur
+          pellentesque justo tincidunt dapibus accumsan. Curabitur rhoncus nibh vitae felis bibendum dictum. Nunc ac sagittis
+          urna. Nulla cursus lobortis leo, id sodales erat ultrices a. Pellentesque in ultrices mi, nec feugiat metus. Maecenas
+          tincidunt eu diam mattis volutpat.
+        
+          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin bibendum odio ut
+          nisl posuere vulputate. Proin pellentesque velit sem, sit amet porttitor nisl euismod at. Vivamus nisl odio, pretium
+          ac tortor non, auctor placerat nisl. Aliquam erat volutpat. Vestibulum varius nisl quis libero ullamcorper venenatis.
+          Pellentesque sed leo et urna fermentum sagittis eu nec tortor. Sed ut odio justo.
+        
+          Ut tempus dui non mi interdum, non scelerisque tellus hendrerit. Sed condimentum diam vitae sagittis viverra. Donec
+          pulvinar purus a scelerisque maximus. Fusce tempor dui nec leo placerat commodo. Donec et dapibus magna. Sed
+          consectetur venenatis semper. Nunc ullamcorper lorem at purus posuere, vel aliquam tellus tristique. Fusce accumsan
+          ipsum ac nisi aliquet, sit amet ullamcorper massa scelerisque. Sed mattis ac nulla in posuere. Integer risus ante,
+          tempus in posuere vel, pellentesque a turpis. Cras quis quam risus.
+        
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis neque vel felis ornare vulputate. Vestibulum
+          condimentum suscipit magna, eu tristique diam commodo nec. Nulla a eros nec risus interdum feugiat. Vivamus hendrerit
+          eget mauris ac ullamcorper. Vestibulum at lacus et dolor consequat auctor. Vestibulum nisl eros, feugiat quis
+          convallis vitae, semper vel felis. Nullam imperdiet pulvinar sem eget tincidunt. Donec finibus varius semper. Donec eu
+          vehicula mauris, sit amet interdum mauris. Cras venenatis nibh magna, in tincidunt lectus dapibus mattis. Nulla
+          tincidunt bibendum nulla, eu dictum urna rhoncus sed. Donec sagittis fringilla odio id placerat. Praesent quis risus
+          fringilla, semper est vel, aliquam sapien.
+        
+          Nam iaculis faucibus orci, quis accumsan quam ornare eget. Maecenas posuere lacus non libero mollis vehicula. Morbi at
+          placerat eros. Curabitur quis arcu a felis malesuada lacinia a tristique leo. Etiam ultricies euismod diam, nec cursus
+          lectus varius id. Sed dolor massa, posuere ac nisi nec, ornare accumsan urna. Phasellus vitae est nec est porta
+          facilisis sit amet eu elit. Phasellus mattis vitae mi eu consequat. Aliquam luctus cursus urna quis pellentesque. Sed
+          congue, nulla sit amet consequat venenatis, mauris leo feugiat nibh, non tincidunt metus sapien nec tellus. Fusce
+          auctor tortor sit amet metus efficitur mattis. Mauris laoreet, arcu vel feugiat sodales, nulla quam tincidunt tellus,
+          ut dapibus sem ante et nisi. Etiam in turpis est. Integer pulvinar libero leo, et sagittis mauris dignissim id. Mauris
+          sodales sed nisl et ornare. Integer in mauris ornare nibh ornare fringilla ut a leo.
+        </p>
       </div>
-
+      --></main>
     </div>
-
-    <div class="main">
-
-      <!-- <div class="top-container">
-        <h1>WORKS</h1>
-      </div> -->
-
-    <div class="middle-container">
-
-      <!-- Para alinhar junto com os jogos -->
-      <div class="games">
-        <h3>PIXEL ART</h3>
-      </div>
-
-      <!-- GRADE DE PROJETOS FEITOS -->
-        <div class="container-fluid">
-            <div class="d-flex flex-row flex-wrap justify-content-center">
-
-                <div class="d-flex flex-column">
-                    <img src="Images/ProjectImages/vampira_idle.gif" class="img-fluid">
-
-                    <img src="Images/ProjectImages/ZombieKpop_Ataque.gif" class="img-fluid scale">
-                </div>
-
-                <div class="d-flex flex-column">
-                    <img src="Images/ProjectImages/deathchan_idle.gif" class="img-fluid">
-
-                    <img src="Images/ProjectImages/bunny_idle.gif" class="img-fluid scale">
-                </div>
-
-                <!-- Outra coluna de imagens -->
-
-                <!-- <div class="d-flex flex-column">
-                  <img src="Images/ProjectImages/deathchan_idle.gif" class="img-fluid">
-
-                  <img src="Images/ProjectImages/bunny_idle.gif" class="img-fluid scale">
-
-                </div> -->
-
-                <div class="games">
-                  <hr>
-                  <h3>GAMES</h3>
-                  <div class="lista-jogos">
-                    <p> <a href="https://www.youtube.com/watch?v=WpZKgemqFGU">DODGE GHOST</a> - Programador 2019 (Em desenvolvimento)</p>
-                    <p> <a href="https://globalgamejam.org/2019/games/build-it-yourself-irm%C3%A3os-%C3%A0-obra">Build Yourself</a> - Programador / Game Designer 2019</p>
-                    <p> <a href="https://dancalds.itch.io/roachleague">Roach League </a> - Character Design/ Programador 2018</p>
-                    <p> <a href="https://99lab.itch.io/runngun">Run n Gun </a> - Programador/Pixel Artist 2018</p>
-                    <p> <a href="https://store.steampowered.com/app/1102880/Kawaii_Deathu_Desu/">Kawaii Deathu Desu</a> - Pixel Artist 2017</p>
-                    <p> <a href="https://www.playbor.com.br/2018/01/pippin-games-equipe-destaque-2017_2/">Monstender</a> - Pixel Artist 2017</p>
-                    <p> <a href="https://99lab.itch.io/trigger"> Trigger</a> - Programador/Pixel Artist* 2017</p>
-                    <p> <a href="https://gamejolt.com/games/prupru-tales/180941">Pru Pru Tales </a>- Pixel Artist* 2016</p>
-                    <p> <a href="https://gamejolt.com/games/super-nihon-cheating-cup-86/136441">Super Cheating Cup 86 </a>- Pixel Artist* 2016</p>
-                  </div>
-
-                  <div class="bottom-container">
-                    <p class= "copyright">© 2019 Lucas Lima.</p>
-                    <p class= "icons">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
-                  </div>
-                </div>
-
-            </div>
-
-         </div>
-      </div>
-
-    <!-- TESTE DE IMAGEM COMO BOTAO E INDO DE CINZA PRA COR -->
-<!--
-        <div class="pixelart">
-
-          <h3>PIXEL ART</h3>
-          <div class="container">
-            <img src="Images/ProjectImages/bunny_idle.gif" alt="bunny gif"  width=250/>
-            <div class="overlay">
-              <div class="overlay-text">
-                <a href="#" class= "button">Teste</a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-    </div>
-
-
-<!--
-      <div class="bottom-container">
-        <p class= "copyright">© 2019 Lucas Lima.</p>
-        <p class= "icons">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"         title="Flaticon">www.flaticon.com</a></p>
-      </div> -->
-  </div>
-
-
-  <!-- JavaScript (Opcional) -->
-  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-
-</body>
-
+  </body>
 </html>
