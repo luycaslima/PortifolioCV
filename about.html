@@ -5,7 +5,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>L22L</title>
+
+  <link rel="icon" href="Images/logo5.svg" sizes="any" type="image/svg+xml">
+
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/post-container.css" />
   <link rel="stylesheet" href="css/animations.css" />
   
   <!-- Fonts -->
@@ -16,6 +20,7 @@
 
   <!-- Js-->
   <script type="text/javascript" src="scripts/menu-mobile.js"></script>
+  <script type="text/javascript" src="scripts/go-up.js"></script>
 </head>
 
 <body>
@@ -33,12 +38,12 @@
       <div id="menu">
 
         <div id="textmenu">
-          <a href="#"><span>Illustrations</span></a>
-          <a href="#"><span>Games</span></a>
-          <a href="#"><span>Projects</span></a>
-          <a href="#"><span>Blog</span></a>
-          <a href="about.html"><span>About</span></a>
-
+          <a id="pixel-art" href="#"><span>Pixel Art</span></a>
+          <a id="tresD" href="#"><span>3D</span></a>
+          <a id="games" href="#"><span>Games</span></a>
+          <a id="projects" href="#"><span>Projects</span></a>
+          <a id="blog" href="#"><span>Blog</span></a>
+          <a id="about" href="about.html"><span>About</span></a>
         </div>
 
         <div id="socialmedia">
@@ -61,19 +66,25 @@
 
     <main>
       
-      <div id="footer-note">
-        <footer>2017 - 2020 Lucas Lima</footer>
-      </div>
-
-      <!-- 
+      <a href="javascript:void(0);" id="go-up-button" onclick="GoToTop()">
+        <img src="Images/Menu/Go_Up.svg" alt="Go Up image">
+      </a>
+      
       <div class="post-container">
         <h1>
-          Título
+          About
         </h1>
+        <img src="Images/Menu/line.svg" alt="line" />
         <h2>
-          Subtítulo
+          Lucas Lima
         </h2>
         
+        
+        <img class="profile-image" src="Images/ProfileImage.svg" alt="Profile Image" />
+        <h2>
+          Programmer | 2D/3D Artist | Game Developer
+        </h2>
+
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus leo in congue vestibulum. Sed iaculis felis et
           erat auctor, id ullamcorper augue rhoncus. Duis quis enim nec nunc ultricies condimentum et vitae velit. Suspendisse
@@ -111,8 +122,22 @@
           ut dapibus sem ante et nisi. Etiam in turpis est. Integer pulvinar libero leo, et sagittis mauris dignissim id. Mauris
           sodales sed nisl et ornare. Integer in mauris ornare nibh ornare fringilla ut a leo.
         </p>
+
+        <img src="Images/Menu/line.svg" alt="line" />
+        <h2>
+          Skills
+        </h2>
+
+        <p>
+          Insira um monte de elogios e pretensão aqui.
+        </p>
+
       </div>
-      -->
+      
+      <div id="footer-note">
+        <footer>2017 - 2020 Lucas Lima</footer>
+      </div>
+
     </main>
   </div>
 </body>

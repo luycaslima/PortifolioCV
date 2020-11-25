@@ -4,10 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>L22L</title>
+
+    <link rel="icon" href="Images/logo5.svg" sizes="any" type="image/svg+xml" />
+
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/gallery-container.css" />
     <link rel="stylesheet" href="css/animations.css" />
-
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -23,30 +25,33 @@
 
     <!-- Js-->
     <script type="text/javascript" src="scripts/menu-mobile.js"></script>
+    <script type="text/javascript" src="scripts/go-up.js"></script>
   </head>
   <body>
     <div id="full-body">
       <div class="sidenav">
         <img src="Images/logo5.svg" alt="L22L Logo" />
-        
+
         <div id="mobile-menu">
           <a href="javascript:void(0);" onclick="openMobileMenu()">
-            <img src="Images/Menu/menu_button_mobile.svg" alt="menu-mobile-bars" />
+            <img
+              src="Images/Menu/menu_button_mobile.svg"
+              alt="menu-mobile-bars"
+            />
           </a>
         </div>
-        
-         <!-- <img src="Images/Menu/line.svg" alt="Menu Line">-->
-        <div id= "menu">
-         
+
+        <!-- <img src="Images/Menu/line.svg" alt="Menu Line">-->
+        <div id="menu">
           <div id="textmenu">
-            <a href="#"><span>Illustrations</span></a>
-            <a href="#"><span>Games</span></a>
-            <a href="#"><span>Projects</span></a>
-            <a href="#"><span>Blog</span></a>
-            <a href="about.html"><span>About</span></a>
-          
+            <a id="pixel-art" href="#"><span>Pixel Art</span></a>
+            <a id="tresD" href="#"><span>3D</span></a>
+            <a id="games" href="#"><span>Games</span></a>
+            <a id="projects" href="#"><span>Projects</span></a>
+            <a id="blog" href="#"><span>Blog</span></a>
+            <a id="about" href="about.html"><span>About</span></a>
           </div>
-          
+
           <div id="socialmedia">
             <a href="https://www.instagram.com/luycaslima/" target="_blank">
               <img src="Images/SocialMedia/instagram.svg" alt="Instagram" />
@@ -58,97 +63,104 @@
               <img src="Images/SocialMedia/github.svg" alt="Github" />
             </a>
           </div>
-
         </div>
-        
-
-      
       </div>
+
+      <a href="javascript:void(0);" id="go-up-button" onclick="GoToTop()">
+        <img src="Images/Menu/Go_Up.svg" alt="Go Up image" />
+      </a>
 
       <main>
         <div class="GalleryContainer">
           <a href="#">
-            <img src="Images/Image_PlaceHolder.svg" alt="" />
-          </a>
-          <a href="#">
-            <img src="Images/Image_PlaceHolder.svg" alt="" />
-          </a>
-          <a href="#">
-            <img src="Images/Image_PlaceHolder.svg" alt="" />
+            <div class="picture-container">
+              <img src="Images/Image_placeholder_colored.svg" alt="" />
+
+              <div class="text-picture-container">
+                <div class="picture-text">NOME</div>
+              </div>
+            </div>
           </a>
 
           <a href="#">
-            <img src="Images/Image_PlaceHolder.svg" alt="" />
+            <div class="picture-container">
+              <img src="Images/Image_placeholder_colored.svg" alt="" />
+
+              <div class="text-picture-container">
+                <div class="picture-text">PUTA NOME GRANDE</div>
+              </div>
+            </div>
           </a>
           <a href="#">
-            <img src="Images/Image_PlaceHolder.svg" alt="" />
-          </a>
-          <a href="#">
-            <img src="Images/Image_PlaceHolder.svg" alt="" />
+            <div class="picture-container">
+              <img src="Images/Image_placeholder_colored.svg" alt="" />
+
+              <div class="text-picture-container">
+                <div class="picture-text">NOME</div>
+              </div>
+            </div>
           </a>
 
           <a href="#">
-            <img src="Images/Image_PlaceHolder.svg" alt="" />
+            <div class="picture-container">
+              <img src="Images/Image_placeholder_colored.svg" alt="" />
+
+              <div class="text-picture-container">
+                <div class="picture-text">NOME</div>
+              </div>
+            </div>
           </a>
           <a href="#">
-            <img src="Images/Image_PlaceHolder.svg" alt="" />
+            <div class="picture-container">
+              <img src="Images/Image_placeholder_colored.svg" alt="" />
+
+              <div class="text-picture-container">
+                <div class="picture-text">NOME</div>
+              </div>
+            </div>
           </a>
           <a href="#">
-            <img src="Images/Image_PlaceHolder.svg" alt="" />
+            <div class="picture-container">
+              <img src="Images/Image_placeholder_colored.svg" alt="" />
+
+              <div class="text-picture-container">
+                <div class="picture-text">NOME</div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="picture-container">
+              <img src="Images/Image_placeholder_colored.svg" alt="" />
+
+              <div class="text-picture-container">
+                <div class="picture-text">NOME</div>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="picture-container">
+              <img src="Images/Image_placeholder_colored.svg" alt="" />
+
+              <div class="text-picture-container">
+                <div class="picture-text">NOME</div>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="picture-container">
+              <img src="Images/Image_placeholder_colored.svg" alt="" />
+
+              <div class="text-picture-container">
+                <div class="picture-text">NOME</div>
+              </div>
+            </div>
           </a>
         </div>
         <div id="footer-note">
           <footer>2017 - 2020 Lucas Lima</footer>
         </div>
-
-        <!-- 
-      <div class="post-container">
-        <h1>
-          Título
-        </h1>
-        <h2>
-          Subtítulo
-        </h2>
-        
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus leo in congue vestibulum. Sed iaculis felis et
-          erat auctor, id ullamcorper augue rhoncus. Duis quis enim nec nunc ultricies condimentum et vitae velit. Suspendisse
-          congue mollis facilisis. Etiam pulvinar metus id orci ultrices, pulvinar ultrices quam gravida. Etiam et aliquam
-          lorem. Ut fermentum lobortis mi at sodales. Sed vitae orci non dui tincidunt lobortis eu in odio. Curabitur
-          pellentesque justo tincidunt dapibus accumsan. Curabitur rhoncus nibh vitae felis bibendum dictum. Nunc ac sagittis
-          urna. Nulla cursus lobortis leo, id sodales erat ultrices a. Pellentesque in ultrices mi, nec feugiat metus. Maecenas
-          tincidunt eu diam mattis volutpat.
-        
-          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin bibendum odio ut
-          nisl posuere vulputate. Proin pellentesque velit sem, sit amet porttitor nisl euismod at. Vivamus nisl odio, pretium
-          ac tortor non, auctor placerat nisl. Aliquam erat volutpat. Vestibulum varius nisl quis libero ullamcorper venenatis.
-          Pellentesque sed leo et urna fermentum sagittis eu nec tortor. Sed ut odio justo.
-        
-          Ut tempus dui non mi interdum, non scelerisque tellus hendrerit. Sed condimentum diam vitae sagittis viverra. Donec
-          pulvinar purus a scelerisque maximus. Fusce tempor dui nec leo placerat commodo. Donec et dapibus magna. Sed
-          consectetur venenatis semper. Nunc ullamcorper lorem at purus posuere, vel aliquam tellus tristique. Fusce accumsan
-          ipsum ac nisi aliquet, sit amet ullamcorper massa scelerisque. Sed mattis ac nulla in posuere. Integer risus ante,
-          tempus in posuere vel, pellentesque a turpis. Cras quis quam risus.
-        
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis neque vel felis ornare vulputate. Vestibulum
-          condimentum suscipit magna, eu tristique diam commodo nec. Nulla a eros nec risus interdum feugiat. Vivamus hendrerit
-          eget mauris ac ullamcorper. Vestibulum at lacus et dolor consequat auctor. Vestibulum nisl eros, feugiat quis
-          convallis vitae, semper vel felis. Nullam imperdiet pulvinar sem eget tincidunt. Donec finibus varius semper. Donec eu
-          vehicula mauris, sit amet interdum mauris. Cras venenatis nibh magna, in tincidunt lectus dapibus mattis. Nulla
-          tincidunt bibendum nulla, eu dictum urna rhoncus sed. Donec sagittis fringilla odio id placerat. Praesent quis risus
-          fringilla, semper est vel, aliquam sapien.
-        
-          Nam iaculis faucibus orci, quis accumsan quam ornare eget. Maecenas posuere lacus non libero mollis vehicula. Morbi at
-          placerat eros. Curabitur quis arcu a felis malesuada lacinia a tristique leo. Etiam ultricies euismod diam, nec cursus
-          lectus varius id. Sed dolor massa, posuere ac nisi nec, ornare accumsan urna. Phasellus vitae est nec est porta
-          facilisis sit amet eu elit. Phasellus mattis vitae mi eu consequat. Aliquam luctus cursus urna quis pellentesque. Sed
-          congue, nulla sit amet consequat venenatis, mauris leo feugiat nibh, non tincidunt metus sapien nec tellus. Fusce
-          auctor tortor sit amet metus efficitur mattis. Mauris laoreet, arcu vel feugiat sodales, nulla quam tincidunt tellus,
-          ut dapibus sem ante et nisi. Etiam in turpis est. Integer pulvinar libero leo, et sagittis mauris dignissim id. Mauris
-          sodales sed nisl et ornare. Integer in mauris ornare nibh ornare fringilla ut a leo.
-        </p>
-      </div>
-      --></main>
+      </main>
     </div>
   </body>
 </html>

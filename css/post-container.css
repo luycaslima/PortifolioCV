@@ -1,0 +1,30 @@
+.post-container{
+	align-content: center;
+	text-align: center;
+	align-items: center;
+    height: auto;
+}	
+.post-container h1{
+	margin: 5% auto auto;
+}
+
+.post-container h2{
+	margin: 2% auto;
+}
+
+
+.profile-image{
+	margin: 1vh auto;
+	max-width: 256px;
+}
+
+
+@media only screen and (min-width: 768px) {
+	.post-container{
+		align-items: center;
+		margin: 0px 200px;
+	}	
+	.post-container h1{
+		margin: 10% auto auto;
+	}
+}

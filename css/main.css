@@ -3,9 +3,6 @@ body {
    /*vp = percentual de viewport height*/
   background: #F7F7FF;
 }
-
-
-
 main h1,h2,h3{
   font-family: 'Righteous', cursive;
 }
@@ -17,7 +14,7 @@ main h1{
 main h2{
   font-size: 1.8em/1;
   letter-spacing: 0.05rem;
-  color:#495867;
+  color: #495867;
 }
 main p{
   font: 400 1.1em/1 'Roboto Condensed', sans-serif;
@@ -26,11 +23,47 @@ main p{
 }
 
 
+#go-up-button{
+  display: none;
+  position: fixed;
+	right: 3rem;
+	bottom: 4rem;
+
+  z-index: 10;
+  
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  cursor: pointer;
+
+	width: 2rem;
+	height: 2rem;
+	
+  padding: 4px;
+
+	
+	justify-content:center;
+  align-items:center;
+
+  background-color:#F7F7FF;
+}
+
+#go-up-button a{
+  display: inline-block;
+}
+
+#go-up-button img{
+  
+  width: 20vh;
+}
+
+
 .sidenav a{
+  transition: all .25s ease;
   text-decoration: none;
 }
 
 #textmenu a{
+  
   padding: 3px 0px;
   letter-spacing: 0.1rem;
   font: 400 1.2em/1 'Roboto Condensed', sans-serif;
@@ -40,6 +73,17 @@ main p{
 #textmenu a:hover{
   color: #FE5F55;
 }
+
+
+/*content of menu */
+#pixel-art:hover span{display:none;}
+#pixel-art:hover:before{content:">Pixel Art.exe";}
+#tresD:hover span{display:none;}
+#tresD:hover:before{content:">3D.exe";}
+#games:hover span{display:none;}
+#games:hover:before{content:">Games.exe";}
+#projects:hover span{display:none;}
+#projects:hover:before{content:">Projects.exe";}
 
 #socialmedia a{
   padding: 0px 10px;
@@ -72,7 +116,7 @@ main {
 #menu{
   display: none;
   background-color: #F7F7FF;
-  padding: 200px 2px 500px;
+  padding: 50% 2px 80%;
   text-align: center;
   
 }
@@ -81,7 +125,6 @@ main {
   
   margin: 5px auto 0px;
   /* Orange Red Crayole */
-  
   border: 4px dashed #FE5F55;
 }
 
@@ -102,8 +145,10 @@ main {
   top: 0px;
 }
 
+
 .sidenav img{
-  height: 90%;
+  /*transition: all .5s ease; Causa um efeito dos filtros passando um por um nas imagens de social media*/
+  height: 100%; 
   margin-left: 10%;
 }
 
@@ -115,7 +160,9 @@ main {
   height: 50%;
 }
 
-
+#mobile-menu img{
+  height: 5.5vh;
+}
 
 #socialmedia{
   display: inline-flex;
@@ -133,9 +180,7 @@ main {
   display: none;
 }
 
-@media screen and (orientation: landscape){
 
-}
 
 /* Desktop Mode*/
 @media only screen and (min-width: 768px) {
@@ -153,7 +198,8 @@ main {
     width: 280px;
     display: block;
     text-align: center;
-    
+    background-color: transparent; 
+
     height:initial;
   } 
   .sidenav img{
@@ -196,7 +242,7 @@ main {
 
 /*when in landscape mode on mobile when is the height is too small (Temporario, o menu tem q ser superior como no modo em pé*/
 
-@media only screen and (max-height:360px){
+@media only screen and (max-height:414px){
 
   .sidenav{
     margin: 0px;
